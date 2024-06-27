@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 46);
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 60px;
+        background-color: rgb(7, 7, 71);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      .main {
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 87px;
+        padding-left: 400px;
+        color: aliceblue;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      nav img {
+        height: 30px;
+        width: 100px;
+      }
+      .first {
+        display: flex;
+        justify-content: space-around;
+      }
+      #input {
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .container {
+        border: 2px;
+        border-style: double;
+        height: 400px;
+        width: 550px;
+        border-color: aquamarine;
+        border-radius: 50px;
+        margin-left: 480px;
+        background-color: aliceblue;
+      }
+      .window {
+        margin: 0;
+        padding: 0;
+        height: 121px;
+        border-radius: 50%;
+        padding: 18px;
+      }
+      #name{
+        color: black;
+    margin-top: -109px;
+    margin-left: 176px;
+      }
+      .cont1 h1{
+        color: black;
+        margin-top: 83px;
+    margin-left: 191px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+      }
+      .myTable {
+        width: 100%;
+        border-color: aliceblue;
+        border-style: double;
+      }
+      .myTable, th, td{
+        border-color: aliceblue;
+        border-style: double;
+      }
+      .myTable{
+        margin-top: 30px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="first">
+          <img src="images.jpeg" alt=" " /> Rapid-Weather App
+        </div>
+        <div class="second">
+          <ul>
+            <li>Home</li>
+            <li>About this app</li>
+            <li>Google</li>
+          </ul>
+        </div>
+        <div>
+          <h1>Hows The Weather?...😂</h1>
+        </div>
+      </nav>
+      <form onsubmit="handleValue">
+      <div class="main">
+        <h1>
+          Search for your city -:
+          <input
+            type="text"
+            id="input"
+            placeholder="Enter the name of your city"
+          />
+          <button id="btn" onclick="handleValue">Enter</button>
+        </h1>
+      </div>
+    </form>
+      <div class="container">
+        <img class="window" src="colorful.jpg" alt="" />
+        <h1 id="name"></h1>
+        <div class="cont1">
+          <h1 id="temp"></h1>
+        </div>
+      </div>
+      <table class="myTable">
+        <tr>
+          <th id="h1">W_Direction</th>
+          <th id="h2">W_Speed</th>
+          <th id="h3">Humidity</th>
+          <th id="h4">Visibility</th>
+          <th id="h5">Pressure</th>
+          <th id="h6">Atmosphere</th>
+        </tr>
+        <tr id="data">
+          <!-- <td id="1"></td>
+          <td id="2"></td>
+          <td id="3"></td>
+          <td id="4"></td>
+          <td id="5"></td>
+          <td id="6"></td> -->
+        </tr>
+      </table>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
